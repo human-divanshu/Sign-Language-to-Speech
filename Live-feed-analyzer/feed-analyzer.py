@@ -63,7 +63,7 @@ def processFrame(frame):
     for i, c in enumerate(contours):
         area = cv2.contourArea(c)
         # area can be configured
-        if area > 2000:
+        if area > 2500:
             cv2.drawContours(f1, contours, i, (0, 0, 0), -1) # -1 fills the countour, else you can give outline thinkness
             
     # create gray scale image 
